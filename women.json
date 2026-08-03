@@ -1,0 +1,17 @@
+[
+  {
+    "index": 1,
+    "description": "An elegant model showcases a luxurious navy and gold couture gown with confidence and timeless sophistication.",
+    "image": "firstWdesign.png"
+  },
+  {
+    "index": 2,
+    "description": "A graceful model showcases a sophisticated brown and black couture ensemble with flowing drapery, blending elegance and contemporary style.",
+    "image": "secondWdesign.png"
+  },
+  {
+    "index": 3,
+    "description": "A poised model presents a sleek black designer gown with refined simplicity and timeless luxury.",
+    "image": "thirdWdesign.png"
+  }
+]
