@@ -4,16 +4,6 @@
       "index": 1,
       "description": "Iscah Tuzo fashion portrait — the designer's signature image, featured in the site header.",
       "image": "images/iscah.jpg"
-    },
-    {
-      "index": 2,
-      "description": "Premium menswear collection — tailored looks designed for the modern gentleman.",
-      "image": "images/advert.png"
-    },
-    {
-      "index": 3,
-      "description": "Elegant womenswear collection — sophisticated designs crafted for confident women.",
-      "image": "images/women brand.jpg"
     }
   ]
 }
