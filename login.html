@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iscah Tuzo | Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    body {
+      background: radial-gradient(circle at top left, #fff9e8 0%, #fffdf7 30%, #f4e8b8 70%, #d8b24e 100%);
+    }
+
+    .glass-card {
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-cover bg-center text-[#22190c]">
+  <div class="mx-auto flex min-h-screen max-w-7xl items-center justify-center px-4 py-8 sm:px-6 lg:px-8">
+    <div class="grid w-full overflow-hidden rounded-[2rem] border border-[#d4a84d]/35 bg-white/70 shadow-[0_20px_60px_rgba(92,70,10,0.18)] glass-card lg:grid-cols-[1.05fr_0.95fr]">
+      <section class="relative flex flex-col justify-between bg-gradient-to-br from-[#fff9e8] via-[#f9efcf] to-[#e6c96f] p-8 sm:p-10 lg:p-12">
+        <div>
+          <p class="mb-3 inline-block rounded-full border border-[#d4a84d]/40 bg-white/70 px-4 py-2 text-[0.8rem] font-semibold uppercase tracking-[0.28em] text-[#a77716]">
+            Private access
+          </p>
+          <h1 class="text-4xl font-black uppercase tracking-[0.08em] text-[#22190c] sm:text-5xl">
+            Iscah <span class="text-[#a77716]">Tuzo</span>
+          </h1>
+          <p class="mt-4 max-w-md text-lg leading-8 text-[#5e4930]">
+            Sign in to explore curated luxury looks, exclusive style notes, and signature fashion moments.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="p-6 sm:p-8 lg:p-10">
+        <div class="mb-8 flex items-center justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.28em] text-[#a77716]">Welcome back</p>
+            <h2 class="text-2xl font-semibold text-[#22190c]">Sign in to your account</h2>
+          </div>
+          <a id="home" href="index.html" class="rounded-full border border-[#d4a84d]/40 bg-[#fff7e3] px-4 py-2 text-sm font-semibold text-[#8d5b0f] transition hover:bg-[#f4e8b8] hover:text-[#22190c]">
+            Back to Home
+          </a>
+        </div>
+
+        <form class="space-y-5" onsubmit="event.preventDefault(); window.location.href='index.html';">
+          <div>
+            <label for="email" class="mb-2 block text-sm font-semibold text-[#5e4930]">Email address</label>
+            <input id="email" type="email" required placeholder="you@example.com" class="w-full rounded-2xl border border-[#d4a84d]/35 bg-white/90 px-4 py-3 text-[#22190c] outline-none ring-0 transition focus:border-[#a77716] focus:bg-[#fffdf7]" />
+          </div>
+
+          <div>
+            <label for="password" class="mb-2 block text-sm font-semibold text-[#5e4930]">Password</label>
+            <input id="password" type="password" required placeholder="Enter your password" class="w-full rounded-2xl border border-[#d4a84d]/35 bg-white/90 px-4 py-3 text-[#22190c] outline-none transition focus:border-[#a77716] focus:bg-[#fffdf7]" />
+          </div>
+
+          <div class="flex items-center justify-between text-sm text-[#6b5630]">
+            <label class="flex items-center gap-2">
+              <input type="checkbox" class="h-4 w-4 rounded border-[#d4a84d]/40 text-[#a77716] focus:ring-[#a77716]" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="font-semibold text-[#a77716] transition hover:text-[#8d5b0f]">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="w-full rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-4 py-3 font-semibold text-white shadow-[0_10px_20px_rgba(167,119,22,0.25)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_12px_24px_rgba(167,119,22,0.35)]">
+            Sign in
+          </button>
+        </form>
+
+        
+      </section>
+    </div>
+  </div>
+  <script src="login-nav.js"></script>
+</body>
+</html>
