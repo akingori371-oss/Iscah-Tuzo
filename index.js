@@ -29,3 +29,8 @@ display2.innerHTML += `
 `;}  )}
 )
 .catch(error => console.log(error));
+
+const loginButton = document.getElementById('login');
+loginButton.addEventListener('click', () => {
+    window.location.href = 'login.html';
+});

@@ -2,31 +2,39 @@
 const loginButton = document.getElementById('login');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
-const username = document.getElementById('username');
+const usernameInput = document.getElementById('username');
+const loginForm = document.querySelector('form');
 
-loginButton.addEventListener('click', () => {
-  window.location.href = 'login.html';
-});
+function signInUser() {
+    const email = emailInput?.value.trim() 
+    const password = passwordInput?.value 
+    const username = usernameInput?.value.trim() 
 
-function signInUser(){
-    
-    windows.location.href = 'user.html';
+    if (!email || !password || !username) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    if (!email.endsWith('@gmail.com') || password.length < 8) {
+        alert('Invalid email or password. Please try again.');
+        return;
+    }
+
+    localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
+    localStorage.setItem('username', username);
+    window.location.href = 'user.html';
 }
 
-const email = emailInput.value;
-const password = passwordInput.value;
-const username = username.value;
-
-if(email.endsWith(".gmail.com") && password.length >= 8){
-    signInUser();
-}else{
-    alert("Invalid email or password. Please try again.");
+if (loginButton) {
+    loginButton.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
 }
 
-localStorage.setItem('email', email);
-localStorage.setItem('password', password);
-localStorage.setItem('username', username);
-
-if(email === "" || password === "" || username === ""){
-    alert("Please fill in all fields.");
+if (loginForm) {
+    loginForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        signInUser();
+    });
 }
