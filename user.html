@@ -8,6 +8,38 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .panel {
+            border: 1px solid rgba(212, 168, 77, 0.25);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 12px 30px rgba(92, 70, 10, 0.08);
+            backdrop-filter: blur(8px);
+        }
+
+        .card {
+            border: 1px solid rgba(212, 168, 77, 0.25);
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 1.25rem;
+            padding: 1.25rem;
+            box-shadow: 0 12px 30px rgba(92, 70, 10, 0.08);
+        }
+
+        .btn-primary {
+            border-radius: 9999px;
+            background: linear-gradient(90deg, #d4a84d 0%, #a77716 100%);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.25rem;
+            box-shadow: 0 10px 20px rgba(167, 119, 22, 0.25);
+            transition: transform 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body class="min-h-screen bg-[radial-gradient(circle_at_top_left,_#fff9e8_0%,_#fffdf7_30%,_#f4e8b8_70%,_#d8b24e_100%)] font-[Poppins] text-[#22190c] leading-7">
 
@@ -29,52 +61,50 @@
 
             <div class="flex items-center gap-2 rounded-full border border-[#d4a84d]/25 bg-[#fff9e8] px-3 py-2 text-sm font-semibold text-[#a77716]">
                 <i class="fa-solid fa-user"></i>
-                <span id="displayUsername"></span>
+                <span id="displayUsername">Anthony</span>
             </div>
         </div>
     </header>
 
     <main class="mx-auto max-w-7xl px-5 py-8 sm:px-6 lg:px-8">
-        <section class="mb-6 rounded-[2rem] border border-[#d4a84d]/25 bg-white/80 p-6 shadow-[0_18px_45px_rgba(92,70,10,0.12)] backdrop-blur sm:p-8">
-         <h2 class="text-2xl font-semibold text-[#22190c] sm:text-3xl">Welcome Back, <span id="displayName"></span> 👋</h2>
+        <section class="panel mb-6 p-6 sm:p-8">
+            <h2 class="text-2xl font-semibold text-[#22190c] sm:text-3xl">Welcome Back, <span id="displayName">Anthony</span> 👋</h2>
 
-            <p class="mb-5 max-w-2xl text-base text-[#6b5630] sm:text-lg">
+            <p class="mb-5 mt-3 max-w-2xl text-base text-[#6b5630] sm:text-lg">
                 Discover our latest luxury collections crafted with elegance,
                 confidence and timeless fashion.
             </p>
 
-            <button class="rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-5 py-3 font-semibold text-white shadow-[0_10px_20px_rgba(167,119,22,0.25)] transition hover:-translate-y-1">
-                Shop Collection
-            </button>
+            <button class="btn-primary">Shop Collection</button>
         </section>
 
         <section class="mb-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <div class="rounded-[1.25rem] border border-[#d4a84d]/25 bg-white/80 p-5 shadow-[0_12px_30px_rgba(92,70,10,0.08)]">
+            <div class="card">
                 <i class="mb-2 block text-xl text-[#a77716] fa-solid fa-shirt"></i>
                 <h3 class="text-lg font-semibold text-[#22190c]">Shop Now</h3>
                 <p class="mt-1 text-sm text-[#6b5630]">Browse our newest arrivals.</p>
             </div>
 
-            <div class="rounded-[1.25rem] border border-[#d4a84d]/25 bg-white/80 p-5 shadow-[0_12px_30px_rgba(92,70,10,0.08)]">
+            <div class="card">
                 <i class="mb-2 block text-xl text-[#a77716] fa-solid fa-heart"></i>
                 <h3 class="text-lg font-semibold text-[#22190c]">Wishlist</h3>
                 <p class="mt-1 text-sm text-[#6b5630]">Your saved favourite outfits.</p>
             </div>
 
-            <div class="rounded-[1.25rem] border border-[#d4a84d]/25 bg-white/80 p-5 shadow-[0_12px_30px_rgba(92,70,10,0.08)]">
+            <div class="card">
                 <i class="mb-2 block text-xl text-[#a77716] fa-solid fa-box"></i>
                 <h3 class="text-lg font-semibold text-[#22190c]">My Orders</h3>
                 <p class="mt-1 text-sm text-[#6b5630]">Track your latest purchases.</p>
             </div>
 
-            <div class="rounded-[1.25rem] border border-[#d4a84d]/25 bg-white/80 p-5 shadow-[0_12px_30px_rgba(92,70,10,0.08)]">
+            <div class="card">
                 <i class="mb-2 block text-xl text-[#a77716] fa-solid fa-user"></i>
                 <h3 class="text-lg font-semibold text-[#22190c]">My Profile</h3>
                 <p class="mt-1 text-sm text-[#6b5630]">Update your account information.</p>
             </div>
         </section>
 
-        <section class="mb-6 rounded-[1.5rem] border border-[#d4a84d]/25 bg-white/80 p-6 shadow-[0_12px_30px_rgba(92,70,10,0.08)]">
+        <section class="panel mb-6">
             <h2 class="mb-4 text-2xl font-semibold text-[#22190c]">Featured Collection</h2>
 
             <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -104,7 +134,7 @@
             </div>
         </section>
 
-        <section class="mb-6 rounded-[1.5rem] border border-[#d4a84d]/25 bg-white/80 p-6 shadow-[0_12px_30px_rgba(92,70,10,0.08)]">
+        <section class="panel mb-6">
             <h2 class="mb-4 text-2xl font-semibold text-[#22190c]">Recent Orders</h2>
 
             <div class="overflow-x-auto">
@@ -135,7 +165,7 @@
             </div>
         </section>
 
-        <section class="rounded-[1.5rem] border border-[#d4a84d]/25 bg-gradient-to-r from-[#fff9e8] to-[#f4e8b8] p-6 shadow-[0_12px_30px_rgba(92,70,10,0.08)]">
+        <section class="panel bg-gradient-to-r from-[#fff9e8] to-[#f4e8b8]">
             <h2 class="text-2xl font-semibold text-[#22190c]">Stay Updated</h2>
             <p class="mt-2 text-[#6b5630]">
                 Subscribe to receive updates on new collections and exclusive offers.
@@ -143,7 +173,7 @@
 
             <form class="mt-4 flex flex-col gap-3 sm:flex-row">
                 <input type="email" placeholder="Enter your email" class="flex-1 rounded-full border border-[#d4a84d]/30 bg-white px-4 py-3 outline-none focus:border-[#a77716]">
-                <button type="submit" class="rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-5 py-3 font-semibold text-white">
+                <button type="submit" class="btn-primary">
                     Subscribe
                 </button>
             </form>
@@ -154,140 +184,18 @@
         <p>&copy; 2026 Iscah Tuzo. All Rights Reserved.</p>
     </footer>
 
-</body>
-</html>                Discover our latest luxury collections crafted with elegance,
-                confidence and timeless fashion.
-            </p>
+    <script>
+        const savedName = localStorage.getItem('username');
+        const displayName = document.getElementById('displayName');
+        const displayUsername = document.getElementById('displayUsername');
 
-            <button>Shop Collection</button>
-        </section>
+        if (displayName) {
+            displayName.textContent = savedName ? savedName : 'Anthony';
+        }
 
-        <section class="quick-actions">
-
-            <div class="card">
-                <i class="fa-solid fa-shirt"></i>
-                <h3>Shop Now</h3>
-                <p>Browse our newest arrivals.</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-heart"></i>
-                <h3>Wishlist</h3>
-                <p>Your saved favourite outfits.</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-box"></i>
-                <h3>My Orders</h3>
-                <p>Track your latest purchases.</p>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-user"></i>
-                <h3>My Profile</h3>
-                <p>Update your account information.</p>
-            </div>
-
-        </section>
-
-        <section class="featured">
-
-            <h2>Featured Collection</h2>
-
-            <div class="products">
-
-                <article class="product">
-                    <img src="images/mens-suit.jpg" alt="Luxury Men's Suit">
-                    <h3>Luxury Men's Suit</h3>
-                    <p>KSh 8,500</p>
-                </article>
-
-                <article class="product">
-                    <img src="images/womens-dress.jpg" alt="Elegant Women's Dress">
-                    <h3>Elegant Women's Dress</h3>
-                    <p>KSh 7,900</p>
-                </article>
-
-                <article class="product">
-                    <img src="images/blazer.jpg" alt="Premium Blazer">
-                    <h3>Premium Blazer</h3>
-                    <p>KSh 6,800</p>
-                </article>
-
-                <article class="product">
-                    <img src="images/casual.jpg" alt="Casual Outfit">
-                    <h3>Casual Collection</h3>
-                    <p>KSh 5,600</p>
-                </article>
-
-            </div>
-
-        </section>
-
-        <section class="orders">
-
-            <h2>Recent Orders</h2>
-
-            <table>
-
-                <thead>
-                    <tr>
-                        <th>Order</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>#1042</td>
-                        <td>Aug 1, 2026</td>
-                        <td>Delivered</td>
-                        <td>KSh 12,500</td>
-                    </tr>
-
-                    <tr>
-                        <td>#1048</td>
-                        <td>Aug 3, 2026</td>
-                        <td>Processing</td>
-                        <td>KSh 8,900</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </section>
-
-        <section class="newsletter">
-
-            <h2>Stay Updated</h2>
-
-            <p>
-                Subscribe to receive updates on new collections and exclusive offers.
-            </p>
-
-            <form>
-
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                >
-
-                <button type="submit">
-                    Subscribe
-                </button>
-
-            </form>
-
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Iscah Tuzo. All Rights Reserved.</p>
-    </footer>
-
+        if (displayUsername) {
+            displayUsername.textContent = savedName ? savedName : 'Anthony';
+        }
+    </script>
 </body>
 </html>
