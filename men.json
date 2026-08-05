@@ -3,33 +3,33 @@
     "id": 1,
     "index": 1,
     "description": "Elegant fashion portrait — opening hero image for the men's signature style page.",
-    "image": "mens image 1.jpeg",
+    "image": "mans/mens image 1.jpeg",
     "bookingLink": "booking.html"
   },
   {
     "id": 2,
     "index": 2,
     "description": "The Signature Look — refined silhouette, front-facing image before the hover swap.",
-    "image": "manpatch1.jpg",
+    "image": "mans/manpatch1.jpg",
     "bookingLink": "booking.html"
   },
   {
     "id": 3,
     "index": 3,
     "description": "The Signature Look — blue-toned design shown on hover, revealing texture and detail.",
-    "image": "man design(blue).jpg",
+    "image": "mans/man design(blue).jpg",
     "bookingLink": "booking.html"
   },
   {
     "id": 4,
     "description": "Bold Yet Elegant — front-facing portrait before the hover swap.",
-    "image": "manpatch2.jpg",
+    "image": "mans/manpatch2.jpg",
     "bookingLink": "booking.html"
   },
   {
     "id": 5,
     "description": "Bold Yet Elegant — black suit design revealed on hover, polished and confident.",
-    "image": "men design(black suit).jpg",
+    "image": "mans/men design(black suit).jpg",
     "bookingLink": "booking.html"
   }
 ]
