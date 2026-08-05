@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iscah Tuzo | Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <style>
+        body {
+            background: radial-gradient(circle at top left, #fff9e8 0%, #fffdf7 30%, #f4e8b8 70%, #d8b24e 100%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+    </style>
 </head>
-<body>
-    <div id="collectionItems"></div>
+<body class="min-h-screen text-[#22190c]">
+    <div class="mx-auto max-w-7xl p-6 sm:p-8 lg:p-10">
+        <header class="mb-10 rounded-[2rem] border border-[#d4a84d]/25 bg-white/80 p-8 shadow-[0_20px_60px_rgba(92,70,10,0.16)] glass-panel">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                <div class="max-w-3xl">
+                    <p class="mb-3 inline-flex items-center gap-2 rounded-full border border-[#d4a84d]/40 bg-[#fff7e3] px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#a77716]">
+                        Collection
+                    </p>
+                    <h1 class="text-4xl font-black uppercase tracking-[0.08em] sm:text-5xl">
+                        Curated Style Stories
+                    </h1>
+                    <p class="mt-4 text-base leading-8 text-[#5e4930] sm:text-lg">
+                        Explore the full Iscah Tuzo collection. Each piece is hand-selected for premium craftsmanship, luxury intent, and a seamless booking experience.
+                    </p>
+                </div>
+                <a href="index.html" class="inline-flex rounded-full border border-[#d4a84d]/40 bg-[#fff7e3] px-5 py-3 text-sm font-semibold text-[#8d5b0f] transition hover:bg-[#f4e8b8] hover:text-[#22190c]">
+                    Back to home
+                </a>
+            </div>
+        </header>
+
+        <main id="collectionItems" class="grid gap-8"></main>
+    </div>
+
+    <script src="collection.js"></script>
 </body>
 </html>
