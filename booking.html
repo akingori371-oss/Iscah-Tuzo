@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iscah Tuzo | Style Booking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <style>
+    body {
+      background: radial-gradient(circle at top left, #fff9e8 0%, #fffdf7 30%, #f4e8b8 70%, #d8b24e 100%);
+    }
+    .glass-panel {
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+    .field-outline {
+      border-color: rgba(212, 168, 77, 0.25);
+    }
+  </style>
+</head>
+<body class="min-h-screen px-4 py-8 text-[#22190c] sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl rounded-[2rem] border border-[#d4a84d]/30 bg-white/70 p-8 shadow-[0_20px_60px_rgba(92,70,10,0.18)] glass-panel sm:p-10 lg:p-12">
+    <header class="mb-10 flex flex-wrap items-center justify-between gap-6">
+      <div>
+        <p class="mb-3 inline-block rounded-full border border-[#d4a84d]/40 bg-[#fff7e3] px-4 py-2 text-[0.85rem] font-semibold uppercase tracking-[0.24em] text-[#a77716]">
+          Bespoke appointments
+        </p>
+        <h1 class="text-4xl font-black uppercase tracking-[0.08em] text-[#22190c] sm:text-5xl">
+          Iscah <span class="text-[#a77716]">Tuzo</span>
+        </h1>
+        <p class="mt-4 max-w-2xl text-base leading-8 text-[#5e4930] sm:text-lg">
+          Book a private styling session, showroom consultation, or couture fitting with our design atelier. Let us tailor a luxury experience around your signature look.
+        </p>
+      </div>
+      <a href="index.html" class="rounded-full border border-[#d4a84d]/40 bg-[#fff7e3] px-5 py-3 text-sm font-semibold text-[#8d5b0f] transition hover:bg-[#f4e8b8] hover:text-[#22190c]">
+        Back to Home
+      </a>
+    </header>
+
+    <section class="grid gap-8 lg:grid-cols-[1.3fr_0.9fr]">
+      <div class="space-y-8">
+        <div class="rounded-[2rem] border border-[#d4a84d]/25 bg-[#fffaf0]/80 p-7 shadow-[0_18px_40px_rgba(77,58,8,0.12)]">
+          <div class="flex items-start gap-4">
+            <div class="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-[#d4a84d]/10 text-[#a77716]">
+              <i class="fa-solid fa-scissors text-xl"></i>
+            </div>
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-[#a77716]">Style Consultation</p>
+              <h2 class="mt-2 text-2xl font-semibold text-[#22190c]">Signature Booking</h2>
+            </div>
+          </div>
+          <p class="mt-5 text-[#5e4930] leading-8">
+            Begin with a private consultation to define your wardrobe narrative. Our team will guide silhouettes, fabrics, and luxury finishes for a seamless, high-fashion wardrobe refresh.
+          </p>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-[1.75rem] bg-white/90 p-5 text-[#6b5630] shadow-[0_12px_30px_rgba(167,119,22,0.08)]">
+              <p class="font-semibold text-[#22190c]">1:1 Atelier Session</p>
+              <p class="mt-2 text-sm">60-minute in-studio styling session with fabric samples.</p>
+            </div>
+            <div class="rounded-[1.75rem] bg-white/90 p-5 text-[#6b5630] shadow-[0_12px_30px_rgba(167,119,22,0.08)]">
+              <p class="font-semibold text-[#22190c]">Custom Look Book</p>
+              <p class="mt-2 text-sm">A curated selection of timeless ensembles tailored to your lifestyle.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-[2rem] border border-[#d4a84d]/25 bg-white/90 p-6 shadow-[0_16px_40px_rgba(77,58,8,0.1)]">
+            <p class="text-sm uppercase tracking-[0.28em] text-[#a77716]">Premium service</p>
+            <h3 class="mt-3 text-xl font-semibold text-[#22190c]">Couture Fitting</h3>
+            <p class="mt-4 text-[#5e4930] leading-8">An elevated couture fitting experience with bespoke tailoring and luxury fabrics matched to your measurements.</p>
+            <div class="mt-6 space-y-3 text-[#6b5630]">
+              <p><strong class="text-[#22190c]">Duration:</strong> 90 minutes</p>
+              <p><strong class="text-[#22190c]">Location:</strong> Luxury studio in the heart of the city</p>
+            </div>
+          </article>
+
+          <article class="rounded-[2rem] border border-[#d4a84d]/25 bg-white/90 p-6 shadow-[0_16px_40px_rgba(77,58,8,0.1)]">
+            <p class="text-sm uppercase tracking-[0.28em] text-[#a77716]">Priority access</p>
+            <h3 class="mt-3 text-xl font-semibold text-[#22190c]">Showroom Preview</h3>
+            <p class="mt-4 text-[#5e4930] leading-8">Enjoy a private preview of upcoming collections with stylist recommendations and first access to new edits.</p>
+            <div class="mt-6 space-y-3 text-[#6b5630]">
+              <p><strong class="text-[#22190c]">Includes:</strong> Style guide + seasonal mood board</p>
+              <p><strong class="text-[#22190c]">Availability:</strong> Weekdays by appointment</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="rounded-[2rem] border border-[#d4a84d]/25 bg-white/95 p-8 shadow-[0_18px_40px_rgba(77,58,8,0.14)]">
+        <div class="mb-8">
+          <p class="text-sm uppercase tracking-[0.28em] text-[#a77716]">Reserve your session</p>
+          <h2 class="mt-3 text-3xl font-semibold text-[#22190c]">Book your appointment</h2>
+          <p class="mt-4 text-[#5e4930] leading-8">Complete the details below and our atelier concierge will confirm your appointment within 24 hours.</p>
+        </div>
+
+        <div id="formErrors" class="hidden rounded-[1.5rem] border border-red-200 bg-[#fff1f0] p-4 text-sm text-[#8b1d18]" aria-live="polite"></div>
+
+        <form id="bookingForm" class="space-y-6">
+          <div>
+            <label for="fullName" class="mb-2 block text-sm font-semibold text-[#5e4930]">Full name</label>
+            <input id="fullName" type="text" placeholder="Your name" class="w-full rounded-3xl border field-outline bg-white/95 px-4 py-3 text-[#22190c] outline-none transition focus:border-[#a77716] focus:bg-[#fffdf7]" />
+          </div>
+
+          <div>
+            <label for="email" class="mb-2 block text-sm font-semibold text-[#5e4930]">Email address</label>
+            <input id="email" type="email" placeholder="you@example.com" class="w-full rounded-3xl border field-outline bg-white/95 px-4 py-3 text-[#22190c] outline-none transition focus:border-[#a77716] focus:bg-[#fffdf7]" />
+          </div>
+
+          <div>
+            <label for="phone" class="mb-2 block text-sm font-semibold text-[#5e4930]">Phone number</label>
+            <input id="phone" type="tel" placeholder="(555) 123-4567" class="w-full rounded-3xl border field-outline bg-white/95 px-4 py-3 text-[#22190c] outline-none transition focus:border-[#a77716] focus:bg-[#fffdf7]" />
+          </div>
+
+          <div>
+            <label for="notes" class="mb-2 block text-sm font-semibold text-[#5e4930]">Style notes</label>
+            <textarea id="notes" rows="4" placeholder="Share your style goals or event details" class="w-full rounded-3xl border field-outline bg-white/95 px-4 py-3 text-[#22190c] outline-none transition focus:border-[#a77716] focus:bg-[#fffdf7]"></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="w-full rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-5 py-4 text-center font-semibold text-white shadow-[0_10px_25px_rgba(167,119,22,0.25)] transition duration-200 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(167,119,22,0.35)]">
+              Request Appointment
+            </button>
+          </div>
+        </form>
+
+        <div class="mt-6 text-center">
+          <p class="mb-3 text-sm text-[#6b5630]">Already have an account?</p>
+          <a href="user.html" class="inline-flex rounded-full border border-[#d4a84d]/40 bg-[#fff7e3] px-6 py-3 text-sm font-semibold text-[#8d5b0f] transition hover:bg-[#f4e8b8] hover:text-[#22190c]">
+            Go to Dashboard
+          </a>
+        </div>
+      </div>
+
+    <section class="mt-12 grid gap-6 md:grid-cols-3">
+      <div class="rounded-[1.75rem] border border-[#d4a84d]/25 bg-[#fff7e3]/85 p-6 text-[#5e4930] shadow-[0_14px_35px_rgba(77,58,8,0.08)]">
+        <p class="text-sm uppercase tracking-[0.32em] text-[#a77716]">Luxury care</p>
+        <h3 class="mt-3 text-xl font-semibold text-[#22190c]">Personal stylist</h3>
+        <p class="mt-3 text-sm leading-7">A dedicated stylist will manage every detail of your appointment and ensure your experience feels polished and effortless.</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-[#d4a84d]/25 bg-[#fff7e3]/85 p-6 text-[#5e4930] shadow-[0_14px_35px_rgba(77,58,8,0.08)]">
+        <p class="text-sm uppercase tracking-[0.32em] text-[#a77716]">Premium fabrics</p>
+        <h3 class="mt-3 text-xl font-semibold text-[#22190c]">Curated materials</h3>
+        <p class="mt-3 text-sm leading-7">Experience the finest textiles and handcrafted details selected for an elevated wardrobe tailored just for you.</p>
+      </div>
+      <div class="rounded-[1.75rem] border border-[#d4a84d]/25 bg-[#fff7e3]/85 p-6 text-[#5e4930] shadow-[0_14px_35px_rgba(77,58,8,0.08)]">
+        <p class="text-sm uppercase tracking-[0.32em] text-[#a77716]">Exclusive access</p>
+        <h3 class="mt-3 text-xl font-semibold text-[#22190c]">Priority invitations</h3>
+        <p class="mt-3 text-sm leading-7">Clients receive first invitations to trunk shows, capsule releases, and private styling events throughout the season.</p>
+      </div>
+    </section>
+
+    <footer class="mt-12 border-t border-[#d4a84d]/30 pt-8 text-center text-[#6d5526]">
+      <p>Designed for discerning clients who seek a seamless luxury booking experience.</p>
+    </footer>
+  </div>
+
+
+  <script src="booking.js"></script>
+
+</body>
+</html>

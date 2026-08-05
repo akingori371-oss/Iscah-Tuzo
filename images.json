@@ -3,7 +3,8 @@
     {
       "index": 1,
       "description": "Iscah Tuzo fashion portrait — the designer's signature image, featured in the site header.",
-      "image": "images/iscah.jpg"
+      "image": "images/iscah.jpg",
+      "bookingLink": "booking.html"
     }
   ]
 }

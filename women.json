@@ -2,28 +2,31 @@
   {
     "index": 1,
     "description": "An elegant model showcases a luxurious navy and gold couture gown with confidence and timeless sophistication.",
-    "image": "firstWdesign.png"
+    "image": "firstWdesign.png",
+    "bookingLink": "booking.html"
   },
   {
     "index": 2,
     "description": "A graceful model showcases a sophisticated brown and black couture ensemble with flowing drapery, blending elegance and contemporary style.",
-    "image": "secondWdesign.png"
+    "image": "secondWdesign.png",
+    "bookingLink": "booking.html"
   },
   {
     "index": 3,
     "description": "A poised model presents a sleek black designer gown with refined simplicity and timeless luxury.",
-    "image": "thirdWdesign.png"
+    "image": "thirdWdesign.png",
+    "bookingLink": "booking.html"
   },
   {
     "index": 4,
     "description": "A striking golden-orange couture gown with a dramatic one-shoulder silhouette and matching headwrap, elegantly showcased in a poised high-fashion portrait.",
-    "image": "fourthWdesign.png"
+    "image": "fourthWdesign.png",
+    "bookingLink": "booking.html"
   },
   {
     "index": 5,
     "description": "A sophisticated off-shoulder black ensemble with flowing wide-leg trousers, elegantly styled in a modern high-fashion portrait that exudes confidence and timeless grace.",
-    "image": "fifthWdesing.png"
+    "image": "fifthWdesing.png",
+    "bookingLink": "booking.html"
   }
-  
-
 ]

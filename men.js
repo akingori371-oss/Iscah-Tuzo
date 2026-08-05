@@ -1,30 +1,51 @@
-const display = document.getElementById("mensCollection");
+const display = document.getElementById('mensCollection');
 
-fetch("men.json")
-    .then(response => response.json())
-    .then(data => {
+fetch('men.json')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(item => {
+      const bookingLink = item.bookingLink || 'booking.html';
+      display.innerHTML += `
+<article class="flex flex-col md:flex-row items-center gap-8 rounded-[2rem] border border-white/80 bg-white/70 p-6 shadow-lg shadow-amber-100/60">
 
-        data.forEach(item => {
+    <div class="w-full md:w-1/2 flex justify-center">
+        <img
+            src="${item.image}"
+            alt="${item.description}"
+            class="w-72 h-96 object-cover rounded-2xl shadow-lg"
+        >
+    </div>
 
-            display.innerHTML += `
-                <article class="rounded-[2rem] border border-white/80 bg-white/70 p-5 shadow-lg shadow-amber-100/60">
+    <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-bold text-[#a77716] mb-4">
+            Iscah Tuzo
+        </h2>
 
-                    <div class="mb-4 overflow-hidden rounded-[20px] bg-[#f7efe0] p-2">
-                        <img
-                            src="mans/${item.image}"
-                            alt="${item.description}"
-                            class="h-[560px] w-full rounded-[16px] transition duration-500 hover:scale-105"
-                        >
-                    </div>
+        <p class="text-lg leading-8 text-[#5b4a1c] mb-6">
+            ${item.description}
+        </p>
 
-                    <p class="mt-5 text-base leading-7 text-gray-700">
-                        ${item.description}
-                    </p>
+        <button
+            type="button"
+            class="book-btn rounded-full bg-[#a77716] px-6 py-3 text-white hover:bg-[#8d6510]"
+            data-link="${bookingLink}">
+            Book Now
+        </button>
 
-                </article>
-            `;
+    </div>
 
-        });
+</article>
+`;
+    });
+  })
+  .catch(error => console.log(error));
 
-    })
-    .catch(error => console.log(error));
+window.addEventListener('click', event => {
+  const bookButton = event.target.closest('.book-btn');
+  if (bookButton) {
+    const targetLink = bookButton.dataset.link;
+    if (targetLink) {
+      window.location.href = targetLink;
+    }
+  }
+});
