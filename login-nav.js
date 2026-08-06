@@ -1,5 +1,5 @@
 
-const loginButton = document.getElementById('login');
+const login = document.getElementsByName(`login`)
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const usernameInput = document.getElementById('username');
@@ -23,14 +23,11 @@ function signInUser() {
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
     localStorage.setItem('username', username);
+    console.log(username)
     window.location.href = 'user.html';
 }
 
-if (loginButton) {
-    loginButton.addEventListener('click', () => {
-        window.location.href = 'login.html';
-    });
-}
+
 
 if (loginForm) {
     loginForm.addEventListener('submit', (event) => {

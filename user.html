@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iscah Tuzo | Client Dashboard</title>
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="icon" type="image/png" href="logo.png" />
@@ -28,7 +29,7 @@
                     Client Dashboard
                 </p>
                 <h1 class="text-4xl font-black uppercase tracking-[0.08em] text-[#22190c] sm:text-5xl">
-                    Welcome Back, <span class="text-[#a77716]">Client</span>
+                    Welcome Back, <span id="displayName" class="text-[#a77716] " ></span>
                 </h1>
                 <p class="mt-4 max-w-2xl text-base leading-8 text-[#5e4930] sm:text-lg">
                     Manage your luxury requests, curate your wishlist, and book your next styling session with the same refined design found across Iscah Tuzo.
@@ -103,7 +104,7 @@
                             <label for="contactMessage" class="mb-2 block text-sm font-semibold text-[#5e4930]">Message</label>
                             <textarea id="contactMessage" rows="4" class="w-full rounded-[1.25rem] border field-outline bg-white/95 px-4 py-3 text-[#22190c] outline-none transition focus:border-[#a77716] focus:bg-[#fffdf7]" placeholder="Share your appointment preferences or questions"></textarea>
                         </div>
-                        <button type="submit" class="w-full rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-5 py-4 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(167,119,22,0.25)] transition duration-200 hover:-translate-y-1">
+                        <button type="submit" onclick="sendMessage()" id="submit" class="w-full rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-5 py-4 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(167,119,22,0.25)] transition duration-200 hover:-translate-y-1">
                             Send Message
                         </button>
                         <div id="contactFeedback" class="hidden rounded-[1.2rem] border border-[#d4a84d]/20 bg-[#faf3dd] p-4 text-sm text-[#5e4930]"></div>
@@ -124,7 +125,7 @@
                             <label for="customNotes" class="mb-2 block text-sm font-semibold text-[#5e4930]">Customization notes</label>
                             <textarea id="customNotes" rows="4" class="w-full rounded-[1.25rem] border field-outline bg-white/95 px-4 py-3 text-[#22190c] outline-none transition focus:border-[#a77716] focus:bg-[#fffdf7]" placeholder="Describe what you'd like to customize for your appointment."></textarea>
                         </div>
-                        <button type="submit" class="w-full rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-5 py-4 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(167,119,22,0.25)] transition duration-200 hover:-translate-y-1">
+                        <button type="submit" onclick="(personalisationLook())" class="w-full rounded-full bg-gradient-to-r from-[#d4a84d] to-[#a77716] px-5 py-4 text-sm font-semibold text-white shadow-[0_10px_25px_rgba(167,119,22,0.25)] transition duration-200 hover:-translate-y-1">
                             Save custom request
                         </button>
                         <div id="customFeedback" class="hidden rounded-[1.2rem] border border-[#d4a84d]/20 bg-[#faf3dd] p-4 text-sm text-[#5e4930]"></div>
@@ -148,22 +149,10 @@
         </section>
     </div>
 
-   
-</body>
-</html>
-
-        <div id="checks"></div>
-
-        <section id="clothesDisplay"></section>
-
-    </main>
-
-   
-
-    <button id="Done" class="fixed bottom-6 right-6 hidden rounded-full bg-[#d4a84d] px-4 py-3 text-white shadow-lg transition hover:bg-[#a77716]">
+    <button id="Done" class="fixed bottom-6 right-6 rounded-full bg-[#d4a84d] px-4 py-3 text-white shadow-lg transition hover:bg-[#a77716]">
        Done,Thank you!
     </button>
     <script src="user.js"></script>
-    <script src="collection.js"></script>
+    
 </body>
 </html>
