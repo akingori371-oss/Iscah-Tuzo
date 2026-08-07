@@ -128,3 +128,10 @@ function bookCloth(clothName) {
     alert(`You have selected ${clothName}. You will be redirected to the user page for confirmation.`);
     window.location.href = "user.html";
 }
+
+function logOut() {
+    localStorage.removeItem("username");
+    localStorage.removeItem("wishList");
+    window.location.href = "index.html";
+    alert("Your information will be recieved.");
+}
